@@ -1,0 +1,48 @@
+{
+  "short_name": "Alphastair",
+  "name": "Alphastair: Word Game",
+  "icons": [
+    {
+      "src": "logo64.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo32.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo24.ico",
+      "sizes": "24x24",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo16.ico",
+      "sizes": "16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffae38",
+  "description": "Alphastair is a word game where you have to make target words from given starting words.",
+  "protocol_handlers": [
+    {
+      "protocol": "web+alphastair",
+      "url": "/signup?ref=%s"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: "Comic", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  padding: 0;
+  -webkit-user-select: none;
+  user-select: none;
+  background-color: #ffae38;
+}
+
+* {
+  font-family: "Comic", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+*::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffae38;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #e0811b;
+  border-radius: 4px;
+}
+
+@font-face {
+  font-family: "Comic"; /*Can be any text*/
+  src: local("COMIC"), url("./fonts/comic/COMIC.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "Comic"; /*Can be any text*/
+  src: local("comici"), url("./fonts/comic/comici.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Comic"; /*Can be any text*/
+  src: local("ComicSansMS3"),
+    url("./fonts/comic/ComicSansMS3.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Comic"; /*Can be any text*/
+  src: local("comicz"), url("./fonts/comic/comicz.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Comic"; /*Can be any text*/
+  src: local("design.graffiti.comicsansms"),
+    url("./fonts/comic/design.graffiti.comicsansms.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Comic"; /*Can be any text*/
+  src: local("design.graffiti.comicsansmsgras"),
+    url("./fonts/comic/design.graffiti.comicsansmsgras.ttf") format("truetype");
+}

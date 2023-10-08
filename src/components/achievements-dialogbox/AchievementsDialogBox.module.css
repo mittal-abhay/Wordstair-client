@@ -1,0 +1,249 @@
+.pseudoHeader {
+  width: 0;
+  height: 0;
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: -2.4rem;
+  left: -0.3rem;
+  background: #82ddff;
+  background: linear-gradient(
+    0deg,
+    rgba(30, 164, 215, 1) 0%,
+    rgba(34, 196, 255, 1) 20%,
+    rgba(30, 164, 215, 1) 100%
+  );
+  padding: 0.5rem 1rem;
+  border-radius: 89% 100% 46% 31% / 100% 93% 100% 100%;
+}
+
+.headerText {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.09rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffae38;
+  max-height: 20rem;
+  gap: 0.6rem;
+  overflow-y: auto;
+}
+
+.closeButton {
+  position: absolute;
+  top: -1.8rem;
+  right: -1.4rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.09rem;
+  color: #8a5d19;
+  cursor: pointer;
+}
+
+.tile {
+  display: flex;
+  background-color: #ffc44e;
+  width: 18rem;
+  height: auto;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.2rem 0 #e0811b;
+  align-items: center;
+  outline: 0;
+  border: none;
+  color: #8a5d19;
+  flex-shrink: 0;
+  justify-content: space-evenly;
+  padding: 0.5rem;
+  flex-shrink: 0;
+}
+
+.tileLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.tileTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.09rem;
+  text-transform: uppercase;
+  color: #6a4206;
+}
+
+.tileDescription {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  margin-bottom: 0.3rem;
+}
+
+.tileRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rewardImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: #e0811b;
+  box-shadow: 0 0.2rem 0 #e0811b;
+  border-radius: 0.3rem;
+}
+
+.rewardImage {
+  max-width: 2.8rem;
+  max-height: 2.8rem;
+  filter: drop-shadow(0 0 0.5rem gold) drop-shadow(0 0 0.5rem gold)
+    drop-shadow(0 0 1rem gold) drop-shadow(0 0 1.5rem gold);
+}
+
+.rewardImageUsed {
+  max-width: 2.7rem;
+  max-height: 2.7rem;
+  filter: drop-shadow(0 0 0.5rem gold) drop-shadow(0 0 0.5rem gold)
+    drop-shadow(0 0 1rem gold) drop-shadow(0 0 1.5rem gold) grayscale(100%);
+}
+
+.rewardImageCollectible {
+  max-width: 2.7rem;
+  max-height: 2.7rem;
+  filter: drop-shadow(0 0 0.5rem #ffffffcb);
+}
+
+.progressBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  height: 0.9rem;
+  background-color: #e0811b;
+  border-radius: 0.4rem;
+  box-shadow: 0 0.1rem 0 #e0811b;
+  padding: 0.2rem;
+  position: relative;
+}
+
+.progressBarInner {
+  width: 0%;
+  height: 100%;
+  background: #82ddff;
+  background: linear-gradient(
+    0deg,
+    rgba(130, 221, 255, 1) 0%,
+    rgba(34, 196, 255, 1) 20%,
+    rgba(30, 164, 215, 1) 100%
+  );
+  border-radius: 0.4rem;
+}
+
+.progressBarInnerLabel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.09rem;
+  color: #fff;
+}
+
+.rewardsScrollingContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+  max-width: 18rem;
+  overflow-x: auto;
+}
+
+.rewardsScrollingContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.rewardSquare {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background-color: #e0811b;
+  box-shadow: 0 0.2rem 0 #e0811b;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
+  margin-bottom: 0.3rem;
+}
+
+.rewardSquareCollectible {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background-color: #f0b26f;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
+  margin-bottom: 0.3rem;
+}
+
+.rewardImageUnused {
+  max-width: 3.5rem;
+  max-height: 3.5rem;
+  filter: drop-shadow(0 0 0.5rem #fff) drop-shadow(0 0 0.5rem gold)
+    drop-shadow(0 0 1rem gold) drop-shadow(0 0 1.5rem gold);
+  animation: slowUpDownWiggle1 2s ease-in-out infinite;
+}
+
+@keyframes slowUpDownWiggle1 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.3rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.noRewardsText {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.09rem;
+  color: #6a4206;
+  margin: 1rem 0;
+}
+
+.rare {
+  border: 0.15rem solid #9c73eb;
+  position: relative;
+}
+
+.epic {
+  border: 0.15rem solid #00c486;
+  position: relative;
+}
+
+.common {
+  border: 0.1rem solid #8a5d1981;
+}

@@ -1,0 +1,184 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffae38;
+  max-height: 30rem;
+  gap: 0.6rem;
+}
+
+.closeButton {
+  position: absolute;
+  top: -1.8rem;
+  right: -1.4rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.09rem;
+  color: #8a5d19;
+  cursor: pointer;
+}
+
+.chestContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 2rem;
+}
+
+.rewardChestImage {
+  max-width: 10rem;
+  max-height: 10rem;
+  filter: drop-shadow(0 0 0.5rem gold) drop-shadow(0 0 0.5rem gold)
+    drop-shadow(0 0 0.8rem gold) drop-shadow(0 0 1rem gold)
+    drop-shadow(0 0 3rem gold);
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: center;
+}
+
+.flipCardContainer {
+  position: relative;
+  width: 5rem;
+  height: 7rem;
+  margin-bottom: 0.5rem;
+}
+
+.flipCard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.flip {
+  transform: rotateY(180deg);
+}
+
+.flipCardFront {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 0.4rem;
+  background-color: #ffc44e;
+  box-shadow: 0 0.2rem 0 #e0811b, 0 -0.1rem 0 #e0811b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flipCardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: #ffc44e;
+  border-radius: 0.4rem;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #8a5d19;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  text-align: center;
+}
+
+.cardIcon {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #e0811b;
+}
+
+.cardImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 1rem);
+  height: 4.5rem;
+  background-color: #e0811b;
+  border-radius: 0.4rem;
+  margin: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.cardImage {
+  max-width: 2.5rem;
+  max-height: 2.5rem;
+  filter: drop-shadow(0 0 0.5rem #8a5d1977);
+}
+
+.cardImageContainerCollectible {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 1rem);
+  height: 4.5rem;
+  background-color: #ffae38;
+  border-radius: 0.4rem;
+  margin: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.cardImageCollectible {
+  max-width: 2.5rem;
+  max-height: 2.5rem;
+  filter: drop-shadow(0 0 0.5rem #ffffffcb);
+}
+
+.rare {
+  border: 0.1rem solid #9c73eb;
+  box-shadow: 0 0 1rem #9d73ebc7;
+  position: relative;
+}
+
+.rare::after {
+  content: "RARE";
+  position: absolute;
+  top: 0;
+  left: -0.8rem;
+  width: 100%;
+  font-weight: 600;
+  font-size: 0.7rem;
+  letter-spacing: 0.05rem;
+  color: #9c73eb;
+}
+
+.epic {
+  border: 0.1rem solid #00c486;
+  box-shadow: 0 0 1rem #00c486a6;
+  position: relative;
+}
+
+.epic::after {
+  content: "EPIC";
+  position: absolute;
+  top: 0;
+  left: -0.7rem;
+  width: 100%;
+  font-size: 0.7rem;
+  letter-spacing: 0.05rem;
+  color: #00c486;
+}
+
+.common {
+  border: 0.1rem solid #8a5d1981;
+}
+
+.rewardText {
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  color: #8a5d19;
+}

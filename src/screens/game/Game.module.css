@@ -1,0 +1,216 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffae38;
+  height: 100dvh;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0 0 0;
+  width: 100%;
+}
+
+.middle {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(20, minmax(auto, 1.1rem));
+  margin: 0.5rem 0 2rem 0;
+  gap: 3px;
+  font-size: clamp(0.75rem, 2.5vmin, 1.5rem);
+}
+
+@media screen and (max-width: 400px) {
+  .keyboard {
+    grid-template-columns: repeat(20, minmax(auto, 1.05rem));
+  }
+}
+
+.key {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffcc67;
+  border: 1px solid #e0811b;
+  box-shadow: 0 0.2rem 0 #e0811b;
+  border-radius: 0.5rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: #c77319;
+  font-weight: 700;
+  grid-column: span 2;
+  padding: 1em;
+  cursor: pointer;
+}
+
+.keyMedium {
+  grid-column: span 3;
+}
+
+.key:hover {
+  background-color: #ffc44e;
+}
+
+.wordInput {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.letterInput {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffcc67;
+  border: 1px solid #e0811b;
+  box-shadow: 0 0.25rem 0 #e0811b;
+  border-radius: 0.8rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #c77319;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.letterInput:hover {
+  background-color: #ffc44e;
+  outline: 2px solid #e0811b;
+}
+
+.letterInputActive {
+  background-color: #ffc44e;
+  outline: 2px solid #e0811b;
+}
+
+.letterInputChanged {
+  background-color: #ffc44e;
+  outline: 2px solid #e0811b;
+  color: #713e08;
+}
+
+.hintBox {
+  white-space: pre-line;
+  background-color: #ffcc67;
+  border: 1px solid #e0811b;
+  box-shadow: 0 0.25rem 0 #e0811b;
+  border-radius: 0.8rem;
+  max-width: 24em;
+  margin: 2rem;
+  max-height: 160px;
+  overflow-y: auto;
+}
+
+.hintText {
+  color: #713e08;
+  margin: 1rem;
+}
+
+.hintErrorText {
+  color: #dc265d;
+  font-weight: 600;
+  margin: auto 1rem;
+}
+
+.extraButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.targetText {
+  font-size: 1.1rem;
+  color: #c77319;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+
+.targetText span {
+  font-size: 2rem;
+  color: #713e08;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+}
+
+.hintButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  cursor: pointer;
+  color: #6a4b9a;
+  background-color: #9c73eb;
+  box-shadow: 0 0.3rem 0.1rem #6a4b9a;
+  margin: 0 1rem;
+}
+
+.hintBulb {
+  width: 2rem;
+}
+
+.hintBulb:hover {
+  animation: wobble 1s ease-in-out;
+}
+
+@keyframes wobble {
+  0% {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  15% {
+    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    -ms-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+  30% {
+    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    -ms-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+  45% {
+    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    -ms-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+  60% {
+    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    -ms-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+  75% {
+    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    -ms-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+  100% {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}

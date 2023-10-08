@@ -1,0 +1,107 @@
+.pseudoHeader {
+  width: 0;
+  height: 0;
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: -2.4rem;
+  background: rgb(168, 16, 16);
+  background: linear-gradient(
+    52deg,
+    rgba(168, 16, 16, 1) 0%,
+    rgba(227, 39, 39, 1) 71%,
+    rgba(227, 16, 16, 1) 100%
+  );
+  padding: 0.5rem 1rem;
+  border-radius: 43% 20% 52% 12% / 77% 88% 83% 69%;
+}
+
+.headerText {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.09rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffae38;
+  max-height: 30rem;
+  gap: 0.6rem;
+  overflow-y: auto;
+}
+
+.tile {
+  display: flex;
+  background-color: #ffc44e;
+  width: 18rem;
+  height: 4rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.2rem 0 #e0811b;
+  align-items: center;
+  outline: 0;
+  border: none;
+  color: #8a5d19;
+  flex-shrink: 0;
+  justify-content: space-evenly;
+}
+
+.closeButton {
+  position: absolute;
+  top: -1.8rem;
+  right: -1.4rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.09rem;
+  color: #8a5d19;
+  cursor: pointer;
+}
+
+.xpBadge {
+  height: 2.5rem;
+  filter: drop-shadow(0 0 0.5rem #8a5d1977);
+}
+
+.rank {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.09rem;
+  color: #65410a;
+}
+
+.name {
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  color: #65410a;
+}
+
+.xp {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  color: #0b86b3;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.level {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  color: #b3670b;
+}
+
+.level::before {
+  content: "(";
+}
+
+.level::after {
+  content: ")";
+}

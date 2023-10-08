@@ -1,0 +1,76 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #ffae38;
+  height: 100dvh;
+}
+
+.logoArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffc44e;
+  padding: 2rem;
+  border-radius: 2.4rem;
+  gap: 2rem;
+}
+
+.input {
+  display: flex;
+  background-color: white;
+  width: 16rem;
+  height: 4rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.65rem 0 #e0811b;
+  align-items: center;
+  padding-left: 2rem;
+  outline: 0;
+  border: none;
+  color: #8a5d19;
+}
+
+.input:focus {
+  box-shadow: 0 0.4rem 0 #e0811b;
+}
+
+.input:hover {
+  box-shadow: 0 0.4rem 0 #e0811b;
+}
+
+.input::placeholder {
+  color: #8a5d19;
+}
+
+.signup {
+  color: #8a5d19;
+}
+
+.signup a {
+  color: #e0811b;
+  text-decoration: none;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+}

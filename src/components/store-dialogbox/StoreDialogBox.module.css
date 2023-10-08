@@ -1,0 +1,151 @@
+.pseudoTreasureChestPositionElement {
+  width: 0;
+  height: 0;
+  position: relative;
+}
+
+.treasureChest {
+  width: 12rem;
+  filter: drop-shadow(0 0 0.5rem #8a5d1977);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: -5rem;
+  left: 1rem;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+.tile {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  width: 100%;
+  min-width: 20rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px dashed #8a5d196f;
+  position: relative;
+}
+
+.layout div:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.tileImage {
+  height: 2rem;
+  filter: drop-shadow(0 0 0.3rem #8a5d1977);
+}
+
+.dicountText {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e41010;
+  position: absolute;
+  left: 2rem;
+  top: -1rem;
+  text-shadow: 0 0 0.3rem #fff, 0 0 0.3rem #fff;
+}
+
+.tileQuantity {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.09rem;
+  color: #068b1e;
+}
+
+.tileEnd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.tileCost {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.09rem;
+  color: #068b1e;
+  position: relative;
+}
+
+.tileCost:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 3px solid;
+  border-color: #e41010;
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+
+.tileButton {
+  margin: 0.2rem 0.6rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.09rem;
+  font-weight: 600;
+}
+
+.closeButton {
+  position: absolute;
+  top: -1.8rem;
+  right: -1.4rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.09rem;
+  color: #8a5d19;
+  cursor: pointer;
+}
+
+.coinsHintsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.coins {
+  background-color: #8a5d19;
+  height: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  width: 7rem;
+  position: relative;
+  border-radius: 0.4rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  letter-spacing: 0.09rem;
+  box-shadow: 0 0.2rem 0 #e0811b;
+}
+
+.coinImage {
+  height: 2rem;
+  margin-left: 1rem;
+  position: absolute;
+  left: -1.8rem;
+  filter: drop-shadow(0 0 0.1rem #8a5d1977);
+}
+
+.message {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.09rem;
+  color: #8a5d19;
+  text-align: center;
+}

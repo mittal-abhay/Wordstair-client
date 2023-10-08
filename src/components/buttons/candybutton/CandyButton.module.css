@@ -1,0 +1,92 @@
+.candy {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-family: "Pacifico", cursive;
+  box-sizing: border-box;
+  /* min-width: 5rem; */
+  font-weight: bold;
+  font-size: 1.5rem;
+  z-index: 1;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  border-style: solid;
+  border-width: 3px 3px 4px;
+  text-shadow: 3px 2px 0 rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+  -moz-box-shadow: 0 6px 3px -3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0 6px 3px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 6px 3px -3px rgba(0, 0, 0, 0.75);
+}
+
+.candy:before,
+.candy:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.candy:before {
+  height: 60%;
+  width: 100%;
+  -webkit-border-radius: 0 0 25% 25%;
+  -moz-border-radius: 0 0 25% 25%;
+  border-radius: 0 0 25% 25%;
+  background: rgba(255, 255, 255, 0.271);
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.2) 20%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.2) 20%
+  );
+  background: -moz-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.2) 20%
+  );
+  background: linear-gradient(
+    top,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.2) 20%
+  );
+}
+.candy:after {
+  width: 9px;
+  height: 18px;
+  margin: 4px 0 0 16px;
+  background: rgba(255, 255, 255, 0.2);
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.8)
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.8)
+  );
+  background: -moz-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.8)
+  );
+  background: linear-gradient(
+    top,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.8)
+  );
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transform: rotate(50deg);
+  -ms-transform: rotate(50deg);
+  transform: rotate(50deg);
+}

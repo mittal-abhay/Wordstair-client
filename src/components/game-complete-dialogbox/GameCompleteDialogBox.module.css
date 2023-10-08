@@ -1,0 +1,157 @@
+.pseudoHeader {
+  width: 0;
+  height: 0;
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: -1.5rem;
+}
+
+.ribbon {
+  height: 5rem;
+  position: relative;
+  filter: drop-shadow(0 -2rem 5rem gold) drop-shadow(0 0 3rem gold)
+    drop-shadow(0 0 0.5rem gold);
+}
+
+.title {
+  position: absolute;
+  top: -1.25rem;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0 0 0.3rem #000, 0 0 0.3rem #000;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+  margin-top: 3rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.buttonText {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.09rem;
+  margin: 0.3rem 1rem;
+}
+
+.tile {
+  display: flex;
+  background-color: #ffc44e;
+  width: 18rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.2rem 0 #e0811b;
+  align-items: center;
+  outline: 0;
+  border: none;
+  flex-shrink: 0;
+  justify-content: space-evenly;
+}
+
+.tileReward {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #5b3a0a;
+  font-weight: 600;
+  font-size: 0.8rem;
+  gap: 0.3rem;
+  margin: 0.3rem;
+}
+
+.rewardImage {
+  max-height: 2.2rem;
+  max-width: 2.2rem;
+  filter: drop-shadow(0 0 0.5rem #8a5d1977);
+}
+
+.heading {
+  color: #5b3a0a;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.usedItems {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+  font-size: 1rem;
+}
+
+.usedItems div span {
+  font-weight: 600;
+}
+
+.levelUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+.levelUpTileText {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.09rem;
+  color: #fff;
+  text-shadow: 0 0 0.5rem gold, 0 0 0.3rem gold, 0 0 0.3rem #5b3a0a,
+    0 0 0.3rem #5b3a0a, 0 0 1rem gold;
+}
+
+.levelUpTile {
+  display: flex;
+}
+
+.levelUpReward {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #5b3a0a;
+  font-weight: 600;
+  font-size: 0.8rem;
+  gap: 0.3rem;
+  margin: 0.3rem;
+  background-color: #ffc44e;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  filter: drop-shadow(0 0.05rem 0.03rem #ba7e23);
+}
+
+.levelUpRewardImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffae38;
+  border-radius: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+  box-shadow: 0 0 0.1rem gold inset;
+}

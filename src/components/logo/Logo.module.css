@@ -1,0 +1,64 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #fff;
+}
+
+.letter {
+  width: 2.4rem;
+  height: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(219, 88, 142);
+  background: linear-gradient(
+    0deg,
+    rgba(219, 88, 142, 1) 0%,
+    rgba(229, 95, 71, 1) 100%
+  );
+  box-shadow: 0 0.35rem 0.1rem #831e4b;
+  border-radius: 0.5rem;
+}
+
+.logo div:nth-of-type(1) {
+  transform: rotate(-16deg);
+}
+
+.logo div:nth-of-type(2) {
+  transform: rotate(8deg);
+}
+
+.logo div:nth-of-type(3) {
+  transform: rotate(-8deg);
+}
+
+.logo div:nth-of-type(4) {
+  transform: rotate(5deg);
+}
+
+.logo div:nth-of-type(5) {
+  transform: rotate(-10deg);
+}
+
+.logo div:nth-of-type(6) {
+  transform: rotate(8deg);
+}
+
+.logo div:nth-of-type(7) {
+  transform: rotate(-8deg);
+}
+
+.logo div:nth-of-type(8) {
+  transform: rotate(4deg);
+}
+
+.logo div:nth-of-type(9) {
+  transform: rotate(-10deg);
+}
+
+.logo div:nth-of-type(10) {
+  transform: rotate(12deg);
+}
