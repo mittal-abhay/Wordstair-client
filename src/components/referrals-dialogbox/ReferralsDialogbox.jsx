@@ -14,14 +14,14 @@ const ReferralsDialogbox = ({ onClose }) => {
         .share({
           title: "Alphastair",
           text: "Alphastair is a fun and interactive word game. Play now!\n\nYou will get reward on signing up with my referral link.\n\n",
-          url: "https://alphastair.netlify.app/signup?ref=" + currentUser._id,
+          url: "https://wordstair.netlify.app/signup?ref=" + currentUser._id,
         })
         .then(() => console.log("Successful share"))
         .catch((error) => console.log("Error sharing", error));
     } else {
       console.log("Share not supported");
       navigator.clipboard.writeText(
-        "Alphastair is a fun and interactive word game. Play now!\n\nYou will get reward on signing up with my referral link.\n\nhttps://alphastair.netlify.app/signup?ref=" +
+        "Alphastair is a fun and interactive word game. Play now!\n\nYou will get reward on signing up with my referral link.\n\nhttps://wordstair.netlify.app/signup?ref=" +
           currentUser._id
       );
     }
