@@ -41,7 +41,7 @@
   "description": "Alphastair is a word game where you have to make target words from given starting words.",
   "protocol_handlers": [
     {
-      "protocol": "web+alphastair",
+      "protocol": "web+wordstair",
       "url": "/signup?ref=%s"
     }
   ]
