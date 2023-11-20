@@ -1,6 +1,6 @@
 {
-  "short_name": "Alphastair",
-  "name": "Alphastair: Word Game",
+  "short_name": "Wordstair",
+  "name": "Wordstair: Word Game",
   "icons": [
     {
       "src": "logo64.ico",
@@ -38,10 +38,10 @@
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffae38",
-  "description": "Alphastair is a word game where you have to make target words from given starting words.",
+  "description": "Wordstair is a word game where you have to make target words from given starting words.",
   "protocol_handlers": [
     {
-      "protocol": "web+wordstair",
+      "protocol": "web + wordstair",
       "url": "/signup?ref=%s"
     }
   ]

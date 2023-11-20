@@ -12,8 +12,8 @@ const ReferralsDialogbox = ({ onClose }) => {
     if (navigator.share) {
       navigator
         .share({
-          title: "Alphastair",
-          text: "Alphastair is a fun and interactive word game. Play now!\n\nYou will get reward on signing up with my referral link.\n\n",
+          title: "Wordstair",
+          text: "Wordstair is a fun and interactive word game. Play now!\n\nYou will get reward on signing up with my referral link.\n\n",
           url: "https://wordstair.netlify.app/signup?ref=" + currentUser._id,
         })
         .then(() => console.log("Successful share"))
@@ -21,7 +21,7 @@ const ReferralsDialogbox = ({ onClose }) => {
     } else {
       console.log("Share not supported");
       navigator.clipboard.writeText(
-        "Alphastair is a fun and interactive word game. Play now!\n\nYou will get reward on signing up with my referral link.\n\nhttps://wordstair.netlify.app/signup?ref=" +
+        "Wordstair is a fun and interactive word game. Play now!\n\nYou will get reward on signing up with my referral link.\n\nhttps://wordstair.netlify.app/signup?ref=" +
           currentUser._id
       );
     }
