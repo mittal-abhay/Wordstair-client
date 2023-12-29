@@ -24,7 +24,7 @@ const Signup = () => {
 
   useEffect(() => {
     if (currentUser) {
-      navigate("/");
+      navigate("/home");
     }
   }, [currentUser]);
 
@@ -40,7 +40,7 @@ const Signup = () => {
         password: passwordRef.current.value,
         referralCode: referralCode,
       });
-      navigate("/");
+      navigate("/home");
     } catch (error) {
       // handle error
       setErrorSnackbarMessage(error.message);

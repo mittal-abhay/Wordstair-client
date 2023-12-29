@@ -20,6 +20,15 @@
   justify-content: flex-start;
   align-items: flex-start;
 }
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 97.5%;
+  margin-top: 1rem;
+  margin: auto;
+  margin-top: 1rem;
+}
 
 .logoArea {
   display: flex;

@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.4c884466.css",
-    "main.js": "/static/js/main.888a81f3.js",
+    "main.css": "/static/css/main.94b6b7ac.css",
+    "main.js": "/static/js/main.16db48d4.js",
+    "static/media/lpage-bg.png": "/static/media/lpage-bg.bfd804ca40611f1e53c8.png",
     "static/media/comici.ttf": "/static/media/comici.9b89f236df07a9cc9d64.ttf",
     "static/media/comicz.ttf": "/static/media/comicz.39357511b47585eb2fd0.ttf",
     "static/media/ComicSansMS3.ttf": "/static/media/ComicSansMS3.3198d266c6629f0b7ce0.ttf",
@@ -10,8 +11,15 @@
     "static/media/coin1.png": "/static/media/coin1.144a3e72c6dfa9420eab.png",
     "static/media/COMIC.TTF": "/static/media/COMIC.cf3d8690bffa563fb10b.TTF",
     "service-worker.js": "/service-worker.js",
+    "static/media/img3.jpeg": "/static/media/img3.847ccaf6eff3437e47af.jpeg",
+    "static/media/img6.jpeg": "/static/media/img6.4c244b92e60c4768f67d.jpeg",
     "static/media/treasure-chest.png": "/static/media/treasure-chest.60f370a10e04e08879ec.png",
+    "static/media/img5.jpeg": "/static/media/img5.6a9202dcbeb52f4b2f8b.jpeg",
+    "static/media/img4.jpeg": "/static/media/img4.f84b7d7d07354c35b22b.jpeg",
+    "static/media/img7.jpeg": "/static/media/img7.53abe1561ad260bfb1fe.jpeg",
+    "static/media/img1.jpeg": "/static/media/img1.31c356549b1f288f7b17.jpeg",
     "static/media/ribbon.png": "/static/media/ribbon.cda48020320b3f9b80b4.png",
+    "static/media/img2.jpeg": "/static/media/img2.4fa414d38bc48014b872.jpeg",
     "static/media/x.png": "/static/media/x.5c822acdd547b639818e.png",
     "static/media/z.png": "/static/media/z.60b107c6399d10b64ce7.png",
     "static/media/w.png": "/static/media/w.aadf7dbd9685fd778618.png",
@@ -39,11 +47,11 @@
     "static/media/j.png": "/static/media/j.ce0e3909440a5b420c01.png",
     "static/media/i.png": "/static/media/i.3166d24d7d72ccb8c974.png",
     "index.html": "/index.html",
-    "main.4c884466.css.map": "/static/css/main.4c884466.css.map",
-    "main.888a81f3.js.map": "/static/js/main.888a81f3.js.map"
+    "main.94b6b7ac.css.map": "/static/css/main.94b6b7ac.css.map",
+    "main.16db48d4.js.map": "/static/js/main.16db48d4.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c884466.css",
-    "static/js/main.888a81f3.js"
+    "static/css/main.94b6b7ac.css",
+    "static/js/main.16db48d4.js"
   ]
 }

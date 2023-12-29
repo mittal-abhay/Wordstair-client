@@ -5,12 +5,12 @@ import Home from "./screens/home/Home";
 import Game from "./screens/game/Game";
 import { useAuth } from "./context/AuthContext";
 import Login from "./screens/login/Login";
-
 import axios from "axios";
 import PrivateRoute from "./components/private-routes/PrivateRoute";
 import Signup from "./screens/login/Signup";
 import Loading from "./components/loading/Loading";
 import ServerErrorDialogbox from "./components/server-errors-dialogbox/ServerErrorDialogbox";
+import LandingPage from "./screens/LandingPage/LandingPage";
 axios.defaults.withCredentials = true;
 
 function App() {
@@ -28,11 +28,15 @@ function App() {
         <Loading />
       ) : (
         <Routes>
-          <Route path="/" element={<PrivateRoute />}>
+
+          <Route path="/" element={<LandingPage />}/>
+          <Route path="/home" element={<PrivateRoute />}>
             <Route exact path="" element={<Home />} />
           </Route>
+
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/signup" element={<Signup />} />
+
           <Route path="/game" element={<PrivateRoute />}>
             <Route exact path="" element={<Game />} />
           </Route>

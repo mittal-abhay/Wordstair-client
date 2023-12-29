@@ -23,7 +23,7 @@ const Login = () => {
 
   useEffect(() => {
     if (currentUser) {
-      navigate("/");
+      navigate("/home");
     }
   }, [currentUser]);
 
@@ -37,8 +37,25 @@ const Login = () => {
         email: emailRef.current.value,
         password: passwordRef.current.value,
       });
-      navigate("/");
+      navigate("/home");
     } catch (error) {
+      // handle error
+      setLoading(false);
+    }
+  };
+
+  const handleGuestSubmit = async (e) => {
+    e.preventDefault();
+    handleChange(e);
+    if (error !== "") return;
+    setLoading(true);
+    try {
+      await login({
+        email: "guest@gmail.com",    
+        password: "123456",
+      });
+      navigate("/home");
+    }catch (error) {
       // handle error
       setLoading(false);
     }
@@ -89,6 +106,7 @@ const Login = () => {
                 onChange={handleChange}
               ></input>
               {error !== "" && <div className={styles.error}>{error}</div>}
+              <div className={styles.loginbtns}>
               <CandyButton
                 color="white"
                 colorLight="#00c486"
@@ -97,6 +115,15 @@ const Login = () => {
               >
                 <div style={{ margin: "0 1.25rem" }}>Login</div>
               </CandyButton>
+              <CandyButton
+                color="white"
+                colorLight="#00c486"
+                colorDark="#00c486"
+                onClick={handleGuestSubmit}
+              >
+                <div style={{ margin: "0 1.25rem"}}>Guest Login</div>
+              </CandyButton>
+              </div>
               <div className={styles.signup}>
                 First time here?{" "}
                 <Link to="/signup" style={{ textDecoration: "none" }}>

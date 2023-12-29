@@ -12,7 +12,6 @@ import badge5 from "../../assets/images/badge5.png";
 import badge6 from "../../assets/images/badge6.png";
 import { useAuth } from "./../../context/AuthContext";
 import { useLocation } from "react-router-dom";
-import axios from "axios";
 import InfoDialogBox from "../../components/dialogbox/info-dialogbox/InfoDialogBox";
 import { useGame } from "../../context/GameContext";
 import GameCompleteDialogBox from "../../components/game-complete-dialogbox/GameCompleteDialogBox";

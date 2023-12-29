@@ -15,7 +15,7 @@ import badge4 from "../../assets/images/badge4.png";
 import badge5 from "../../assets/images/badge5.png";
 import badge6 from "../../assets/images/badge6.png";
 import { useAuth } from "./../../context/AuthContext";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation,useNavigate} from "react-router-dom";
 import StoreDialogBox from "../../components/store-dialogbox/StoreDialogBox";
 import { useGame } from "../../context/GameContext";
 import LeaderboardDialogBox from "../../components/leaderboard-dialogbox/LeaderboardDialogBox";
@@ -25,7 +25,7 @@ import RewardDialogBox from "../../components/reward-dialogbox/RewardDialogBox";
 import HowToPlayDialogBox from "../../components/how-to-play-dialogbox/HowToPlayDialogBox";
 import ReferralsDialogbox from "../../components/referrals-dialogbox/ReferralsDialogbox";
 import ServerErrorDialogbox from "../../components/server-errors-dialogbox/ServerErrorDialogbox";
-
+import CandyButton from "../../components/buttons/candybutton/CandyButton";
 const Home = () => {
   const { currentUser, updateCurrentUser } = useAuth();
   const { userGamesCommons } = useGame();
@@ -39,6 +39,9 @@ const Home = () => {
   const [showLeaderboard, setShowLeaderboard] = useState(false);
   const [showHowToPlay, setShowHowToPlay] = useState(false);
   const [showReferrals, setShowReferrals] = useState(false);
+  const {logout} = useAuth(); 
+  const navigate = useNavigate();
+
 
   const getXPBadge = () => {
     if (currentLevel <= 3) return badge1;
@@ -64,6 +67,25 @@ const Home = () => {
     return unlockLevel <= currentLevel;
   };
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await logout();
+      navigate("/");
+    } catch (error) {
+      // handle error
+      console.log(error);
+    }
+  };
+  const handlehome = async (e) => {
+    e.preventDefault();
+    try {
+      navigate("/");
+    } catch (error) {
+      // handle error
+      console.log(error);
+    }
+  }
   return (
     <div className={styles.layout}>
       {showReferrals && (
@@ -79,8 +101,28 @@ const Home = () => {
       {showLeaderboard && (
         <LeaderboardDialogBox onClose={() => setShowLeaderboard(false)} />
       )}
+      <div className={styles.navbar}>
+      <CandyButton
+                color="white"
+                colorLight="#00c486"
+                colorDark="#00c486"
+                onClick={handlehome}
+              >
+                <div style={{ margin: "0 1.25rem" }}>Home</div>
+        </CandyButton>
+      <CandyButton
+                color="white"
+                colorLight="#00c486"
+                colorDark="#00c486"
+                onClick={handleSubmit}
+              >
+                <div style={{ margin: "0 1.25rem" }}>Logout</div>
+        </CandyButton>
+        </div>
       <div className={styles.top}>
+        
         <div className={styles.topLeft}>
+        
           <div className={styles.xpDiv}>
             <img className={styles.xpBadge} src={getXPBadge()} alt="bolt"></img>
             <div className={styles.xpText}>{name}</div>
@@ -97,6 +139,8 @@ const Home = () => {
           </div>
         </div>
         <div className={styles.topRight}>
+        
+       
           <div className={styles.coins}>
             <img className={styles.coinImage} src={coinImage} alt="coin"></img>
             {coins}
